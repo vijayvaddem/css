@@ -6,7 +6,9 @@ Keyword colors can be found at http://colours.neilorangepeel.com/
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -14,7 +16,8 @@ body {
   padding: 0;
   margin: 0;
 }
-h1, h2 {
+h1,
+h2 {
   text-transform: uppercase;
 }
 
@@ -25,6 +28,8 @@ h1, h2 {
 .container {
   color: white;
   font-family: helvetica, arial, sans-serif;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 
 header {
@@ -41,4 +46,32 @@ aside {
 }
 footer {
   background: darkslateblue;
+}
+
+@media (min-width: 600px) {
+  nav {
+    float: left;
+    width: 25%;
+  }
+  main {
+    float: left;
+    width: 75%;
+  }
+  aside {
+    clear: both;
+  }
+}
+
+@media (min-width: 850px) {
+  main {
+    width: 50%;
+  }
+  aside {
+    width: 25%;
+    clear: none;
+    float: right;
+  }
+  footer {
+    clear: both;
+  }
 }
