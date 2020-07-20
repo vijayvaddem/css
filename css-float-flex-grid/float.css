@@ -37,9 +37,13 @@ header {
 }
 main {
   background: slategray;
+  position: relative;
 }
 nav {
   background: cadetblue;
+  position: sticky;
+  z-index: 100;
+  top: 0;
 }
 aside {
   background: seagreen;
@@ -74,4 +78,15 @@ footer {
   footer {
     clear: both;
   }
+}
+
+.absolute {
+  background-color: red;
+  width: 100px;
+  padding: 10px;
+  top: 0px;
+  right: 0px;
+  position: absolute;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
 }
